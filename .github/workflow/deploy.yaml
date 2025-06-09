@@ -1,0 +1,14 @@
+name: Pruebas de subida
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  primerjob:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Deploy to production
+        run: echo "Hola padrino..."
